@@ -1,0 +1,430 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 1em 2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.logo .circle {
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 50%;
+}
+
+.nav-and-search {
+    display: flex;
+    align-items: center;
+    gap: 1.5em; /* Jarak antara nav dan search bar */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+/* Search Bar Style */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px; /* Menempatkan ikon di sebelah kanan */
+    top: 50%;
+    transform: translateY(-50%); /* Menjaga ikon tetap terpusat vertikal */
+    color: #333;
+    cursor: pointer;
+}
+
+
+  /* Simple loading spinner style */
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+            margin-left: 10px;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .submit-button {
+            position: relative;
+        }
+
+        .loading-text {
+            display: none;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #3498db;
+        }
+
+.hero {
+  text-align: center;
+  padding: 12em 0;
+  background: #f0f0f0;
+
+}
+
+.hero span {
+  color: teal;
+}
+
+.hero h3{
+    font-size: 3em;
+}
+
+.intro {
+  display: flex;
+  padding: 2em;
+  gap: 2em;
+  background-color: #393E46;
+}
+
+.intro p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero button {
+  background-color: #00b5ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.featured-posters {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #f9f9f9;
+}
+
+.featured-posters h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.featured-posters p {
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.posters-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.poster-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.poster-card:hover {
+    transform: translateY(-10px);
+}
+
+.tag {
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+    padding: 0.2em 0.5em;
+    position: absolute;
+    margin: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.poster-content {
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 1em;
+}
+
+.poster-info {
+    padding: 1em;
+    text-align: left;
+}
+
+.poster-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.poster-info p {
+    color: #666;
+    margin: 0.5em 0 0;
+}
+
+
+/* Gallery Highlights Section */
+.gallery-highlights {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #ffffff;
+}
+
+.gallery-highlights h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.gallery-highlights p {
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.highlight-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.user-info p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.menu-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.post-content {
+    padding: 6em;
+    font-size: 1.2em;
+    color: #555;
+    background-color: #eee;
+    text-align: center;
+}
+
+.post-footer {
+    padding: 1em;
+    text-align: left;
+}
+
+.post-footer p {
+    margin: 0;
+    color: #555;
+}
+
+.hashtags {
+    margin-top: 0.5em;
+}
+
+.hashtags span {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+
+/* Container khusus untuk Request Service */
+.request-service-container {
+  display: flex;
+  width: 100%; /* Mengambil seluruh lebar */
+  height: 100%; /* Jika ingin mengikuti tinggi layar */
+  background-color: #eeeeee; /* Background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Form Container: Lebih besar dari bagian gambar */
+.form-container {
+  flex: 3; /* Form akan mengambil 3/4 ruang */
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.required {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.note {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 12px 15px;
+  width: 100%;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Gambar Container: Lebih kecil dari form */
+.image-container {
+  flex: 1; /* Gambar mengambil 1/4 ruang */
+  background-color: #e5e5e5;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+footer p {
+     color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+ 
+}
